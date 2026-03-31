@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.terasoluna.app.domain.repository.EmployeeMapper">
+
+    <resultMap id="employeeResultMap" type="com.example.terasoluna.app.domain.model.Employee">
+        <id column="employee_id" property="employeeId"/>
+        <result column="name" property="name"/>
+        <result column="age" property="age"/>
+        <result column="birthday" property="birthday"/>
+        <result column="address" property="address"/>
+        <result column="phone" property="phone"/>
+    </resultMap>
+
+    <sql id="employeeColumns">
+        employee_id, name, age, birthday, address, phone
+    </sql>
+
+    <sql id="searchWhere">
+        <where>
+            1 = 1
+            <if test="criteria.employeeId != null and criteria.employeeId != ''">
+                AND employee_id LIKE CONCAT('%', #{criteria.employeeId}, '%')
+            </if>
+            <if test="criteria.name != null and criteria.name != ''">
+                AND name LIKE CONCAT('%', #{criteria.name}, '%')
+            </if>
+            <if test="criteria.age != null">
+                AND age = #{criteria.age}
+            </if>
+            <if test="criteria.birthday != null and criteria.birthday != ''">
+                AND birthday LIKE CONCAT('%', #{criteria.birthday}, '%')
+            </if>
+            <if test="criteria.address != null and criteria.address != ''">
+                AND address LIKE CONCAT('%', #{criteria.address}, '%')
+            </if>
+            <if test="criteria.phone != null and criteria.phone != ''">
+                AND phone LIKE CONCAT('%', #{criteria.phone}, '%')
+            </if>
+        </where>
+    </sql>
+
+    <select id="search" resultMap="employeeResultMap">
+        SELECT
+        <include refid="employeeColumns"/>
+        FROM employee
+        <include refid="searchWhere"/>
+        ORDER BY employee_id
+        LIMIT #{limit} OFFSET #{offset}
+    </select>
+
+    <select id="count" resultType="int">
+        SELECT COUNT(*)
+        FROM employee
+        <include refid="searchWhere"/>
+    </select>
+
+</mapper>
