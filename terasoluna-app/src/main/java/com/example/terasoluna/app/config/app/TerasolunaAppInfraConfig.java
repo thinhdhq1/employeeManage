@@ -50,14 +50,21 @@ public class TerasolunaAppInfraConfig {
     }
 
 	@Bean
-	public DataSourceInitializer dataSourceInitializer(DataSource dataSource) {
-		ResourceDatabasePopulator populator = new ResourceDatabasePopulator();
-		populator.addScript(new ClassPathResource("db/schema-h2.sql"));
-		populator.addScript(new ClassPathResource("db/data-h2.sql"));
-
+	public DataSourceInitializer dataSourceInitializer(DataSource dataSource,
+			@Value("${database.url}") String databaseUrl) {
 		DataSourceInitializer initializer = new DataSourceInitializer();
 		initializer.setDataSource(dataSource);
-		initializer.setDatabasePopulator(populator);
+		
+        // Only initialize schema/data scripts for H2
+        if (databaseUrl.contains("h2")) {
+            ResourceDatabasePopulator populator = new ResourceDatabasePopulator();
+            populator.addScript(new ClassPathResource("db/schema-h2.sql"));
+            populator.addScript(new ClassPathResource("db/data-h2.sql"));
+            initializer.setDatabasePopulator(populator);
+        } else {
+            initializer.setEnabled(false);
+        }
+
 		return initializer;
 	}
 

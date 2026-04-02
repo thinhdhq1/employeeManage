@@ -61,9 +61,9 @@ public class EmployeeSearchController {
                 form.getEmployeeId(),
                 form.getName(),
                 form.getAge(),
-                form.getBirthday(),
+                form.getBirth(),
                 form.getAddress(),
-                form.getPhone());
+                form.getPhoneNumber());
 
         EmployeeSearchResult result = employeeSearchService.search(criteria, safePage, safeSize);
 

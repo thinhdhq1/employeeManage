@@ -1,0 +1,781 @@
+02-Apr-2026 14:29:35.186 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Serverのバージョン名:     Apache Tomcat/10.1.15
+02-Apr-2026 14:29:35.191 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Server ビルド:            Oct 11 2023 23:38:40 UTC
+02-Apr-2026 14:29:35.192 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log サーバーのバージョン番号: 10.1.15.0
+02-Apr-2026 14:29:35.192 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS 名:                    Windows 11
+02-Apr-2026 14:29:35.192 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS バージョン:            10.0
+02-Apr-2026 14:29:35.192 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log アーキテクチャ:           amd64
+02-Apr-2026 14:29:35.192 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                C:\pleiades\2023-12\java\21
+02-Apr-2026 14:29:35.192 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM バージョン:           21.0.1+12-LTS
+02-Apr-2026 14:29:35.193 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM ベンダ:               Eclipse Adoptium
+02-Apr-2026 14:29:35.193 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:            C:\project\terasoluna\tomcat\apache-tomcat-10.1.15
+02-Apr-2026 14:29:35.193 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:            C:\project\terasoluna\tomcat\apache-tomcat-10.1.15
+02-Apr-2026 14:29:35.413 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.config.file=C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\conf\logging.properties
+02-Apr-2026 14:29:35.413 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+02-Apr-2026 14:29:35.414 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djdk.tls.ephemeralDHKeySize=2048
+02-Apr-2026 14:29:35.414 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+02-Apr-2026 14:29:35.414 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.lang=ALL-UNNAMED
+02-Apr-2026 14:29:35.414 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.io=ALL-UNNAMED
+02-Apr-2026 14:29:35.414 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util=ALL-UNNAMED
+02-Apr-2026 14:29:35.414 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+02-Apr-2026 14:29:35.414 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+02-Apr-2026 14:29:35.414 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.base=C:\project\terasoluna\tomcat\apache-tomcat-10.1.15
+02-Apr-2026 14:29:35.414 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.home=C:\project\terasoluna\tomcat\apache-tomcat-10.1.15
+02-Apr-2026 14:29:35.414 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.io.tmpdir=C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\temp
+02-Apr-2026 14:29:35.421 情報 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 商用環境に最適な性能を発揮する APR ベースの Tomcat ネイティブライブラリが java.library.path [C:\pleiades\2023-12\java\21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;c:\Users\ThinhDHQ1\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\ThinhDHQ1\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Users\ThinhDHQ1\AppData\Local\Programs\Microsoft VS Code;C:\Users\ThinhDHQ1\Downloads\WINDOWS.X64_193000_db_home\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\pleiades\2023-12\java\21\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\ibm\gsk8\lib64;C:\Program Files (x86)\ibm\gsk8\lib;C:\PROGRA~1\IBM\SQLLIB\BIN;C:\PROGRA~1\IBM\SQLLIB\FUNCTION;C:\PROGRA~1\IBM\SQLLIB\SAMPLES\REPL;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;$([Environment]::GetEnvironmentVariable('Path','User'));C:\apache-maven-3.9.14\bin;C:\Users\ThinhDHQ1\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\ThinhDHQ1\AppData\Local\Programs\Git\cmd;c:\Users\ThinhDHQ1\.vscode\extensions\vscjava.vscode-java-debug-0.58.5\bundled\scripts\noConfigScripts;.] に存在しません。
+02-Apr-2026 14:29:35.763 情報 [main] org.apache.coyote.AbstractProtocol.init プロトコルハンドラ ["http-nio-8080"] を初期化します。
+02-Apr-2026 14:29:35.786 重大 [main] org.apache.catalina.util.LifecycleBase.handleSubClassException コンポーネント [Connector["http-nio-8080"]] の初期化に失敗しました
+	org.apache.catalina.LifecycleException: プロトコルハンドラの初期化に失敗しました
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1015)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:554)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1010)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:747)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:769)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:307)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:477)
+	Caused by: java.net.BindException: Address already in use: bind
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:565)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:344)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:301)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:247)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:202)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1280)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1293)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:624)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:77)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1013)
+		... 11 more
+02-Apr-2026 14:29:35.791 情報 [main] org.apache.catalina.startup.Catalina.load サーバーの初期化 [902] ミリ秒
+02-Apr-2026 14:29:35.857 情報 [main] org.apache.catalina.core.StandardService.startInternal サービス [Catalina] を起動します
+02-Apr-2026 14:29:35.857 情報 [main] org.apache.catalina.core.StandardEngine.startInternal サーブレットエンジンの起動：[Apache Tomcat/10.1.15]
+02-Apr-2026 14:29:40.218 情報 [main] org.apache.jasper.servlet.TldScanner.scanJars 少なくとも1つのJARでTLDをスキャンしましたが、TLDが含まれていませんでした。スキャンしたもののTLDが見つからなかったJARの完全なリストについては、このロガーのデバッグログを有効にしてください。スキャン中に不要なJARをスキップすると、起動時間とJSPのコンパイル時間が短縮されます。
+02-Apr-2026 14:29:47.593 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\docs] を配備します
+02-Apr-2026 14:29:47.645 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\docs] の Web アプリケーションの配備は [50] ミリ秒で完了しました。
+02-Apr-2026 14:29:47.645 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\examples] を配備します
+02-Apr-2026 14:29:48.258 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\examples] の Web アプリケーションの配備は [612] ミリ秒で完了しました。
+02-Apr-2026 14:29:48.258 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\host-manager] を配備します
+02-Apr-2026 14:29:48.311 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\host-manager] の Web アプリケーションの配備は [53] ミリ秒で完了しました。
+02-Apr-2026 14:29:48.311 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\manager] を配備します
+02-Apr-2026 14:29:48.370 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\manager] の Web アプリケーションの配備は [59] ミリ秒で完了しました。
+02-Apr-2026 14:29:48.370 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\ROOT] を配備します
+02-Apr-2026 14:29:48.404 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\ROOT] の Web アプリケーションの配備は [33] ミリ秒で完了しました。
+02-Apr-2026 14:29:48.410 情報 [main] org.apache.catalina.startup.Catalina.start サーバーの起動 [12616] ミリ秒
+02-Apr-2026 14:29:48.430 重大 [main] org.apache.catalina.core.StandardServer.await アドレス [localhost] のポート番号 [8005] にサーバー停止ソケットを作成できませんでした (基本ポート番号は [8005]、オフセットは [0] です)
+	java.net.BindException: Address already in use: bind
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:565)
+		at java.base/sun.nio.ch.Net.bind(Net.java:554)
+		at java.base/sun.nio.ch.NioSocketImpl.bind(NioSocketImpl.java:636)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:391)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:278)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:577)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:887)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:833)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:347)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:478)
+02-Apr-2026 14:29:48.431 情報 [main] org.apache.coyote.AbstractProtocol.pause ProtocolHandler ["http-nio-8080"] を一時停止します。
+02-Apr-2026 14:29:48.431 情報 [main] org.apache.catalina.core.StandardService.stopInternal サービス [Catalina] を停止します
+02-Apr-2026 14:29:48.507 警告 [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc Web アプリケーション [terasoluna-app] は自身で登録した JDBC ドライバー [org.h2.Driver] を停止時に解除できませんでした。メモリーリークの発生を防ぐには JDBC ドライバーを強制的に解除してください。
+02-Apr-2026 14:29:48.520 情報 [main] org.apache.coyote.AbstractProtocol.stop ProtocolHandler ["http-nio-8080"]の停止中
+02-Apr-2026 14:29:48.521 情報 [main] org.apache.coyote.AbstractProtocol.destroy ProtocolHandler ["http-nio-8080"] を破棄します。
+02-Apr-2026 14:31:08.870 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Serverのバージョン名:     Apache Tomcat/10.1.15
+02-Apr-2026 14:31:08.872 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Server ビルド:            Oct 11 2023 23:38:40 UTC
+02-Apr-2026 14:31:08.872 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log サーバーのバージョン番号: 10.1.15.0
+02-Apr-2026 14:31:08.872 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS 名:                    Windows 11
+02-Apr-2026 14:31:08.872 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS バージョン:            10.0
+02-Apr-2026 14:31:08.872 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log アーキテクチャ:           amd64
+02-Apr-2026 14:31:08.872 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                C:\pleiades\2023-12\java\21
+02-Apr-2026 14:31:08.872 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM バージョン:           21.0.1+12-LTS
+02-Apr-2026 14:31:08.872 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM ベンダ:               Eclipse Adoptium
+02-Apr-2026 14:31:08.873 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:            C:\project\terasoluna\tomcat\apache-tomcat-10.1.15
+02-Apr-2026 14:31:08.873 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:            C:\project\terasoluna\tomcat\apache-tomcat-10.1.15
+02-Apr-2026 14:31:08.883 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.config.file=C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\conf\logging.properties
+02-Apr-2026 14:31:08.884 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+02-Apr-2026 14:31:08.884 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djdk.tls.ephemeralDHKeySize=2048
+02-Apr-2026 14:31:08.885 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+02-Apr-2026 14:31:08.885 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.lang=ALL-UNNAMED
+02-Apr-2026 14:31:08.886 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.io=ALL-UNNAMED
+02-Apr-2026 14:31:08.886 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util=ALL-UNNAMED
+02-Apr-2026 14:31:08.886 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+02-Apr-2026 14:31:08.886 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+02-Apr-2026 14:31:08.887 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.base=C:\project\terasoluna\tomcat\apache-tomcat-10.1.15
+02-Apr-2026 14:31:08.887 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.home=C:\project\terasoluna\tomcat\apache-tomcat-10.1.15
+02-Apr-2026 14:31:08.887 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.io.tmpdir=C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\temp
+02-Apr-2026 14:31:08.893 情報 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 商用環境に最適な性能を発揮する APR ベースの Tomcat ネイティブライブラリが java.library.path [C:\pleiades\2023-12\java\21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;c:\Users\ThinhDHQ1\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\ThinhDHQ1\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Users\ThinhDHQ1\AppData\Local\Programs\Microsoft VS Code;C:\Users\ThinhDHQ1\Downloads\WINDOWS.X64_193000_db_home\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\pleiades\2023-12\java\21\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\ibm\gsk8\lib64;C:\Program Files (x86)\ibm\gsk8\lib;C:\PROGRA~1\IBM\SQLLIB\BIN;C:\PROGRA~1\IBM\SQLLIB\FUNCTION;C:\PROGRA~1\IBM\SQLLIB\SAMPLES\REPL;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;$([Environment]::GetEnvironmentVariable('Path','User'));C:\apache-maven-3.9.14\bin;C:\Users\ThinhDHQ1\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\ThinhDHQ1\AppData\Local\Programs\Git\cmd;c:\Users\ThinhDHQ1\.vscode\extensions\vscjava.vscode-java-debug-0.58.5\bundled\scripts\noConfigScripts;.] に存在しません。
+02-Apr-2026 14:31:09.169 情報 [main] org.apache.coyote.AbstractProtocol.init プロトコルハンドラ ["http-nio-8080"] を初期化します。
+02-Apr-2026 14:31:09.192 情報 [main] org.apache.catalina.startup.Catalina.load サーバーの初期化 [547] ミリ秒
+02-Apr-2026 14:31:09.283 情報 [main] org.apache.catalina.core.StandardService.startInternal サービス [Catalina] を起動します
+02-Apr-2026 14:31:09.283 情報 [main] org.apache.catalina.core.StandardEngine.startInternal サーブレットエンジンの起動：[Apache Tomcat/10.1.15]
+02-Apr-2026 14:31:12.399 情報 [main] org.apache.jasper.servlet.TldScanner.scanJars 少なくとも1つのJARでTLDをスキャンしましたが、TLDが含まれていませんでした。スキャンしたもののTLDが見つからなかったJARの完全なリストについては、このロガーのデバッグログを有効にしてください。スキャン中に不要なJARをスキップすると、起動時間とJSPのコンパイル時間が短縮されます。
+02-Apr-2026 14:31:17.506 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\docs] を配備します
+02-Apr-2026 14:31:17.545 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\docs] の Web アプリケーションの配備は [38] ミリ秒で完了しました。
+02-Apr-2026 14:31:17.545 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\examples] を配備します
+02-Apr-2026 14:31:17.860 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\examples] の Web アプリケーションの配備は [315] ミリ秒で完了しました。
+02-Apr-2026 14:31:17.860 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\host-manager] を配備します
+02-Apr-2026 14:31:17.901 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\host-manager] の Web アプリケーションの配備は [41] ミリ秒で完了しました。
+02-Apr-2026 14:31:17.901 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\manager] を配備します
+02-Apr-2026 14:31:17.949 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\manager] の Web アプリケーションの配備は [48] ミリ秒で完了しました。
+02-Apr-2026 14:31:17.949 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\ROOT] を配備します
+02-Apr-2026 14:31:17.969 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\ROOT] の Web アプリケーションの配備は [20] ミリ秒で完了しました。
+02-Apr-2026 14:31:17.983 情報 [main] org.apache.coyote.AbstractProtocol.start プロトコルハンドラー ["http-nio-8080"] を開始しました。
+02-Apr-2026 14:31:18.016 情報 [main] org.apache.catalina.startup.Catalina.start サーバーの起動 [8825] ミリ秒
+02-Apr-2026 15:40:16.922 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Serverのバージョン名:     Apache Tomcat/10.1.15
+02-Apr-2026 15:40:16.927 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Server ビルド:            Oct 11 2023 23:38:40 UTC
+02-Apr-2026 15:40:16.927 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log サーバーのバージョン番号: 10.1.15.0
+02-Apr-2026 15:40:16.927 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS 名:                    Windows 11
+02-Apr-2026 15:40:16.927 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS バージョン:            10.0
+02-Apr-2026 15:40:16.928 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log アーキテクチャ:           amd64
+02-Apr-2026 15:40:16.928 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                C:\pleiades\2023-12\java\21
+02-Apr-2026 15:40:16.928 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM バージョン:           21.0.1+12-LTS
+02-Apr-2026 15:40:16.928 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM ベンダ:               Eclipse Adoptium
+02-Apr-2026 15:40:16.928 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:            C:\project\terasoluna\tomcat\apache-tomcat-10.1.15
+02-Apr-2026 15:40:16.928 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:            C:\project\terasoluna\tomcat\apache-tomcat-10.1.15
+02-Apr-2026 15:40:16.946 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.config.file=C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\conf\logging.properties
+02-Apr-2026 15:40:16.947 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+02-Apr-2026 15:40:16.947 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djdk.tls.ephemeralDHKeySize=2048
+02-Apr-2026 15:40:16.947 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+02-Apr-2026 15:40:16.947 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.lang=ALL-UNNAMED
+02-Apr-2026 15:40:16.947 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.io=ALL-UNNAMED
+02-Apr-2026 15:40:16.947 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util=ALL-UNNAMED
+02-Apr-2026 15:40:16.947 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+02-Apr-2026 15:40:16.947 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+02-Apr-2026 15:40:16.947 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.base=C:\project\terasoluna\tomcat\apache-tomcat-10.1.15
+02-Apr-2026 15:40:16.947 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.home=C:\project\terasoluna\tomcat\apache-tomcat-10.1.15
+02-Apr-2026 15:40:16.947 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.io.tmpdir=C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\temp
+02-Apr-2026 15:40:16.952 情報 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 商用環境に最適な性能を発揮する APR ベースの Tomcat ネイティブライブラリが java.library.path [C:\pleiades\2023-12\java\21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;c:\Users\ThinhDHQ1\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\ThinhDHQ1\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Users\ThinhDHQ1\AppData\Local\Programs\Microsoft VS Code;C:\Users\ThinhDHQ1\Downloads\WINDOWS.X64_193000_db_home\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\pleiades\2023-12\java\21\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\ibm\gsk8\lib64;C:\Program Files (x86)\ibm\gsk8\lib;C:\PROGRA~1\IBM\SQLLIB\BIN;C:\PROGRA~1\IBM\SQLLIB\FUNCTION;C:\PROGRA~1\IBM\SQLLIB\SAMPLES\REPL;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;$([Environment]::GetEnvironmentVariable('Path','User'));C:\apache-maven-3.9.14\bin;C:\Users\ThinhDHQ1\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\ThinhDHQ1\AppData\Local\Programs\Git\cmd;c:\Users\ThinhDHQ1\.vscode\extensions\vscjava.vscode-java-debug-0.58.5\bundled\scripts\noConfigScripts;.] に存在しません。
+02-Apr-2026 15:40:17.266 情報 [main] org.apache.coyote.AbstractProtocol.init プロトコルハンドラ ["http-nio-8080"] を初期化します。
+02-Apr-2026 15:40:17.292 重大 [main] org.apache.catalina.util.LifecycleBase.handleSubClassException コンポーネント [Connector["http-nio-8080"]] の初期化に失敗しました
+	org.apache.catalina.LifecycleException: プロトコルハンドラの初期化に失敗しました
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1015)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:554)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1010)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:747)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:769)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:307)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:477)
+	Caused by: java.net.BindException: Address already in use: bind
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:565)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:344)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:301)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:247)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:202)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1280)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1293)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:624)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:77)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1013)
+		... 11 more
+02-Apr-2026 15:40:17.293 情報 [main] org.apache.catalina.startup.Catalina.load サーバーの初期化 [691] ミリ秒
+02-Apr-2026 15:40:17.372 情報 [main] org.apache.catalina.core.StandardService.startInternal サービス [Catalina] を起動します
+02-Apr-2026 15:40:17.372 情報 [main] org.apache.catalina.core.StandardEngine.startInternal サーブレットエンジンの起動：[Apache Tomcat/10.1.15]
+02-Apr-2026 15:40:20.294 情報 [main] org.apache.jasper.servlet.TldScanner.scanJars 少なくとも1つのJARでTLDをスキャンしましたが、TLDが含まれていませんでした。スキャンしたもののTLDが見つからなかったJARの完全なリストについては、このロガーのデバッグログを有効にしてください。スキャン中に不要なJARをスキップすると、起動時間とJSPのコンパイル時間が短縮されます。
+02-Apr-2026 15:40:22.735 重大 [main] org.apache.catalina.core.StandardContext.startInternal 1つまたは複数のリスナーが開始に失敗しました。 完全な詳細は適切なコンテナログファイルにあります。
+02-Apr-2026 15:40:22.742 重大 [main] org.apache.catalina.core.StandardContext.startInternal 以前のエラーのためにコンテキストの起動が失敗しました [/terasoluna-app]
+02-Apr-2026 15:40:22.996 警告 [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc Web アプリケーション [terasoluna-app] は自身で登録した JDBC ドライバー [oracle.jdbc.OracleDriver] を停止時に解除できませんでした。メモリーリークの発生を防ぐには JDBC ドライバーを強制的に解除してください。
+02-Apr-2026 15:40:23.011 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\docs] を配備します
+02-Apr-2026 15:40:23.070 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\docs] の Web アプリケーションの配備は [57] ミリ秒で完了しました。
+02-Apr-2026 15:40:23.070 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\examples] を配備します
+02-Apr-2026 15:40:23.414 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\examples] の Web アプリケーションの配備は [343] ミリ秒で完了しました。
+02-Apr-2026 15:40:23.414 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\host-manager] を配備します
+02-Apr-2026 15:40:23.452 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\host-manager] の Web アプリケーションの配備は [38] ミリ秒で完了しました。
+02-Apr-2026 15:40:23.453 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\manager] を配備します
+02-Apr-2026 15:40:23.488 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\manager] の Web アプリケーションの配備は [35] ミリ秒で完了しました。
+02-Apr-2026 15:40:23.488 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\ROOT] を配備します
+02-Apr-2026 15:40:23.517 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\ROOT] の Web アプリケーションの配備は [28] ミリ秒で完了しました。
+02-Apr-2026 15:40:23.523 情報 [main] org.apache.catalina.startup.Catalina.start サーバーの起動 [6227] ミリ秒
+02-Apr-2026 15:40:23.527 重大 [main] org.apache.catalina.core.StandardServer.await アドレス [localhost] のポート番号 [8005] にサーバー停止ソケットを作成できませんでした (基本ポート番号は [8005]、オフセットは [0] です)
+	java.net.BindException: Address already in use: bind
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:565)
+		at java.base/sun.nio.ch.Net.bind(Net.java:554)
+		at java.base/sun.nio.ch.NioSocketImpl.bind(NioSocketImpl.java:636)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:391)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:278)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:577)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:887)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:833)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:347)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:478)
+02-Apr-2026 15:40:23.527 情報 [main] org.apache.coyote.AbstractProtocol.pause ProtocolHandler ["http-nio-8080"] を一時停止します。
+02-Apr-2026 15:40:23.527 情報 [main] org.apache.catalina.core.StandardService.stopInternal サービス [Catalina] を停止します
+02-Apr-2026 15:40:23.544 情報 [main] org.apache.coyote.AbstractProtocol.stop ProtocolHandler ["http-nio-8080"]の停止中
+02-Apr-2026 15:40:23.545 情報 [main] org.apache.coyote.AbstractProtocol.destroy ProtocolHandler ["http-nio-8080"] を破棄します。
+02-Apr-2026 15:41:19.780 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Serverのバージョン名:     Apache Tomcat/10.1.15
+02-Apr-2026 15:41:19.783 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Server ビルド:            Oct 11 2023 23:38:40 UTC
+02-Apr-2026 15:41:19.783 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log サーバーのバージョン番号: 10.1.15.0
+02-Apr-2026 15:41:19.784 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS 名:                    Windows 11
+02-Apr-2026 15:41:19.784 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS バージョン:            10.0
+02-Apr-2026 15:41:19.784 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log アーキテクチャ:           amd64
+02-Apr-2026 15:41:19.784 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                C:\pleiades\2023-12\java\21
+02-Apr-2026 15:41:19.784 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM バージョン:           21.0.1+12-LTS
+02-Apr-2026 15:41:19.784 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM ベンダ:               Eclipse Adoptium
+02-Apr-2026 15:41:19.785 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:            C:\project\terasoluna\tomcat\apache-tomcat-10.1.15
+02-Apr-2026 15:41:19.785 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:            C:\project\terasoluna\tomcat\apache-tomcat-10.1.15
+02-Apr-2026 15:41:19.796 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.config.file=C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\conf\logging.properties
+02-Apr-2026 15:41:19.796 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+02-Apr-2026 15:41:19.796 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djdk.tls.ephemeralDHKeySize=2048
+02-Apr-2026 15:41:19.796 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+02-Apr-2026 15:41:19.796 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.lang=ALL-UNNAMED
+02-Apr-2026 15:41:19.797 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.io=ALL-UNNAMED
+02-Apr-2026 15:41:19.797 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util=ALL-UNNAMED
+02-Apr-2026 15:41:19.797 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+02-Apr-2026 15:41:19.797 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+02-Apr-2026 15:41:19.797 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.base=C:\project\terasoluna\tomcat\apache-tomcat-10.1.15
+02-Apr-2026 15:41:19.797 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.home=C:\project\terasoluna\tomcat\apache-tomcat-10.1.15
+02-Apr-2026 15:41:19.798 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.io.tmpdir=C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\temp
+02-Apr-2026 15:41:19.803 情報 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 商用環境に最適な性能を発揮する APR ベースの Tomcat ネイティブライブラリが java.library.path [C:\pleiades\2023-12\java\21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;c:\Users\ThinhDHQ1\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\ThinhDHQ1\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Users\ThinhDHQ1\AppData\Local\Programs\Microsoft VS Code;C:\Users\ThinhDHQ1\Downloads\WINDOWS.X64_193000_db_home\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\pleiades\2023-12\java\21\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\ibm\gsk8\lib64;C:\Program Files (x86)\ibm\gsk8\lib;C:\PROGRA~1\IBM\SQLLIB\BIN;C:\PROGRA~1\IBM\SQLLIB\FUNCTION;C:\PROGRA~1\IBM\SQLLIB\SAMPLES\REPL;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;$([Environment]::GetEnvironmentVariable('Path','User'));C:\apache-maven-3.9.14\bin;C:\Users\ThinhDHQ1\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\ThinhDHQ1\AppData\Local\Programs\Git\cmd;c:\Users\ThinhDHQ1\.vscode\extensions\vscjava.vscode-java-debug-0.58.5\bundled\scripts\noConfigScripts;.] に存在しません。
+02-Apr-2026 15:41:20.081 情報 [main] org.apache.coyote.AbstractProtocol.init プロトコルハンドラ ["http-nio-8080"] を初期化します。
+02-Apr-2026 15:41:20.099 重大 [main] org.apache.catalina.util.LifecycleBase.handleSubClassException コンポーネント [Connector["http-nio-8080"]] の初期化に失敗しました
+	org.apache.catalina.LifecycleException: プロトコルハンドラの初期化に失敗しました
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1015)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:554)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1010)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:747)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:769)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:307)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:477)
+	Caused by: java.net.BindException: Address already in use: bind
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:565)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:344)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:301)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:247)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:202)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1280)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1293)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:624)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:77)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1013)
+		... 11 more
+02-Apr-2026 15:41:20.100 情報 [main] org.apache.catalina.startup.Catalina.load サーバーの初期化 [556] ミリ秒
+02-Apr-2026 15:41:20.173 情報 [main] org.apache.catalina.core.StandardService.startInternal サービス [Catalina] を起動します
+02-Apr-2026 15:41:20.173 情報 [main] org.apache.catalina.core.StandardEngine.startInternal サーブレットエンジンの起動：[Apache Tomcat/10.1.15]
+02-Apr-2026 15:41:20.220 重大 [main] org.apache.catalina.core.ContainerBase.startInternal 子コンテナーを開始できません。
+	java.util.concurrent.ExecutionException: org.apache.catalina.LifecycleException: コンポーネント [org.apache.catalina.webresources.StandardRoot@75c56eb9] の開始に失敗しました
+		at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+		at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:191)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:873)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:845)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:240)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:433)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:917)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:795)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:347)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:478)
+	Caused by: org.apache.catalina.LifecycleException: コンポーネント [org.apache.catalina.webresources.StandardRoot@75c56eb9] の開始に失敗しました
+		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:419)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:186)
+		at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4535)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4668)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+		... 19 more
+	Caused by: java.lang.IllegalArgumentException: 指定されたメインリソースセット [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\wtpwebapps\terasoluna-app] は、ディレクトリまたは war ファイルではないか、読み取り可能ではありません (存在しないか、アクセス許可がありません)
+		at org.apache.catalina.webresources.StandardRoot.createMainResourceSet(StandardRoot.java:749)
+		at org.apache.catalina.webresources.StandardRoot.startInternal(StandardRoot.java:707)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		... 28 more
+02-Apr-2026 15:41:20.223 重大 [main] org.apache.catalina.core.ContainerBase.startInternal 子コンテナーを開始できません。
+	java.util.concurrent.ExecutionException: org.apache.catalina.LifecycleException: 子コンテナーを開始できません。
+		at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+		at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:191)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:873)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:240)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:433)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:917)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:795)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:347)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:478)
+	Caused by: org.apache.catalina.LifecycleException: 子コンテナーを開始できません。
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:885)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:845)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+		... 11 more
+	Caused by: java.util.concurrent.ExecutionException: org.apache.catalina.LifecycleException: コンポーネント [org.apache.catalina.webresources.StandardRoot@75c56eb9] の開始に失敗しました
+		at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+		at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:191)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:873)
+		... 19 more
+	Caused by: org.apache.catalina.LifecycleException: コンポーネント [org.apache.catalina.webresources.StandardRoot@75c56eb9] の開始に失敗しました
+		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:419)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:186)
+		at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4535)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4668)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+		... 19 more
+	Caused by: java.lang.IllegalArgumentException: 指定されたメインリソースセット [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\wtpwebapps\terasoluna-app] は、ディレクトリまたは war ファイルではないか、読み取り可能ではありません (存在しないか、アクセス許可がありません)
+		at org.apache.catalina.webresources.StandardRoot.createMainResourceSet(StandardRoot.java:749)
+		at org.apache.catalina.webresources.StandardRoot.startInternal(StandardRoot.java:707)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		... 28 more
+02-Apr-2026 15:41:20.224 重大 [main] org.apache.catalina.startup.Catalina.start 必要なサーバーコンポーネントを開始できないため、Tomcat を開始できませんでした。
+	org.apache.catalina.LifecycleException: 子コンテナーを開始できません。
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:885)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:240)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:433)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:917)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:795)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:347)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:478)
+	Caused by: java.util.concurrent.ExecutionException: org.apache.catalina.LifecycleException: 子コンテナーを開始できません。
+		at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+		at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:191)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:873)
+		... 11 more
+	Caused by: org.apache.catalina.LifecycleException: 子コンテナーを開始できません。
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:885)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:845)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+		... 11 more
+	Caused by: java.util.concurrent.ExecutionException: org.apache.catalina.LifecycleException: コンポーネント [org.apache.catalina.webresources.StandardRoot@75c56eb9] の開始に失敗しました
+		at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+		at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:191)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:873)
+		... 19 more
+	Caused by: org.apache.catalina.LifecycleException: コンポーネント [org.apache.catalina.webresources.StandardRoot@75c56eb9] の開始に失敗しました
+		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:419)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:186)
+		at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4535)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4668)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+		... 19 more
+	Caused by: java.lang.IllegalArgumentException: 指定されたメインリソースセット [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\wtpwebapps\terasoluna-app] は、ディレクトリまたは war ファイルではないか、読み取り可能ではありません (存在しないか、アクセス許可がありません)
+		at org.apache.catalina.webresources.StandardRoot.createMainResourceSet(StandardRoot.java:749)
+		at org.apache.catalina.webresources.StandardRoot.startInternal(StandardRoot.java:707)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		... 28 more
+02-Apr-2026 15:41:20.226 情報 [main] org.apache.coyote.AbstractProtocol.pause ProtocolHandler ["http-nio-8080"] を一時停止します。
+02-Apr-2026 15:41:20.226 情報 [main] org.apache.catalina.core.StandardService.stopInternal サービス [Catalina] を停止します
+02-Apr-2026 15:41:20.228 情報 [main] org.apache.coyote.AbstractProtocol.stop ProtocolHandler ["http-nio-8080"]の停止中
+02-Apr-2026 15:41:20.229 情報 [main] org.apache.coyote.AbstractProtocol.destroy ProtocolHandler ["http-nio-8080"] を破棄します。
+02-Apr-2026 15:44:02.727 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Serverのバージョン名:     Apache Tomcat/10.1.15
+02-Apr-2026 15:44:02.729 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Server ビルド:            Oct 11 2023 23:38:40 UTC
+02-Apr-2026 15:44:02.729 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log サーバーのバージョン番号: 10.1.15.0
+02-Apr-2026 15:44:02.729 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS 名:                    Windows 11
+02-Apr-2026 15:44:02.729 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS バージョン:            10.0
+02-Apr-2026 15:44:02.729 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log アーキテクチャ:           amd64
+02-Apr-2026 15:44:02.729 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                C:\pleiades\2023-12\java\21
+02-Apr-2026 15:44:02.729 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM バージョン:           21.0.1+12-LTS
+02-Apr-2026 15:44:02.729 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM ベンダ:               Eclipse Adoptium
+02-Apr-2026 15:44:02.729 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:            C:\project\terasoluna\tomcat\apache-tomcat-10.1.15
+02-Apr-2026 15:44:02.729 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:            C:\project\terasoluna\tomcat\apache-tomcat-10.1.15
+02-Apr-2026 15:44:02.729 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.config.file=C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\conf\logging.properties
+02-Apr-2026 15:44:02.729 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+02-Apr-2026 15:44:02.729 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djdk.tls.ephemeralDHKeySize=2048
+02-Apr-2026 15:44:02.729 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+02-Apr-2026 15:44:02.729 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.lang=ALL-UNNAMED
+02-Apr-2026 15:44:02.729 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.io=ALL-UNNAMED
+02-Apr-2026 15:44:02.744 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util=ALL-UNNAMED
+02-Apr-2026 15:44:02.744 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+02-Apr-2026 15:44:02.744 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+02-Apr-2026 15:44:02.744 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.base=C:\project\terasoluna\tomcat\apache-tomcat-10.1.15
+02-Apr-2026 15:44:02.744 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.home=C:\project\terasoluna\tomcat\apache-tomcat-10.1.15
+02-Apr-2026 15:44:02.744 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.io.tmpdir=C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\temp
+02-Apr-2026 15:44:02.744 情報 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 商用環境に最適な性能を発揮する APR ベースの Tomcat ネイティブライブラリが java.library.path [C:\pleiades\2023-12\java\21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;c:\Users\ThinhDHQ1\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\ThinhDHQ1\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Users\ThinhDHQ1\AppData\Local\Programs\Microsoft VS Code;C:\Users\ThinhDHQ1\Downloads\WINDOWS.X64_193000_db_home\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\pleiades\2023-12\java\21\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\ibm\gsk8\lib64;C:\Program Files (x86)\ibm\gsk8\lib;C:\PROGRA~1\IBM\SQLLIB\BIN;C:\PROGRA~1\IBM\SQLLIB\FUNCTION;C:\PROGRA~1\IBM\SQLLIB\SAMPLES\REPL;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;$([Environment]::GetEnvironmentVariable('Path','User'));C:\apache-maven-3.9.14\bin;C:\Users\ThinhDHQ1\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\ThinhDHQ1\AppData\Local\Programs\Git\cmd;c:\Users\ThinhDHQ1\.vscode\extensions\vscjava.vscode-java-debug-0.58.5\bundled\scripts\noConfigScripts;.] に存在しません。
+02-Apr-2026 15:44:03.003 情報 [main] org.apache.coyote.AbstractProtocol.init プロトコルハンドラ ["http-nio-8080"] を初期化します。
+02-Apr-2026 15:44:03.043 情報 [main] org.apache.catalina.startup.Catalina.load サーバーの初期化 [525] ミリ秒
+02-Apr-2026 15:44:03.104 情報 [main] org.apache.catalina.core.StandardService.startInternal サービス [Catalina] を起動します
+02-Apr-2026 15:44:03.105 情報 [main] org.apache.catalina.core.StandardEngine.startInternal サーブレットエンジンの起動：[Apache Tomcat/10.1.15]
+02-Apr-2026 15:44:03.127 重大 [main] org.apache.catalina.core.ContainerBase.startInternal 子コンテナーを開始できません。
+	java.util.concurrent.ExecutionException: org.apache.catalina.LifecycleException: コンポーネント [org.apache.catalina.webresources.StandardRoot@609bcfb6] の開始に失敗しました
+		at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+		at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:191)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:873)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:845)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:240)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:433)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:917)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:795)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:347)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:478)
+	Caused by: org.apache.catalina.LifecycleException: コンポーネント [org.apache.catalina.webresources.StandardRoot@609bcfb6] の開始に失敗しました
+		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:419)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:186)
+		at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4535)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4668)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+		... 19 more
+	Caused by: java.lang.IllegalArgumentException: 指定されたメインリソースセット [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\wtpwebapps\terasoluna-app] は、ディレクトリまたは war ファイルではないか、読み取り可能ではありません (存在しないか、アクセス許可がありません)
+		at org.apache.catalina.webresources.StandardRoot.createMainResourceSet(StandardRoot.java:749)
+		at org.apache.catalina.webresources.StandardRoot.startInternal(StandardRoot.java:707)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		... 28 more
+02-Apr-2026 15:44:03.144 重大 [main] org.apache.catalina.core.ContainerBase.startInternal 子コンテナーを開始できません。
+	java.util.concurrent.ExecutionException: org.apache.catalina.LifecycleException: 子コンテナーを開始できません。
+		at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+		at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:191)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:873)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:240)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:433)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:917)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:795)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:347)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:478)
+	Caused by: org.apache.catalina.LifecycleException: 子コンテナーを開始できません。
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:885)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:845)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+		... 11 more
+	Caused by: java.util.concurrent.ExecutionException: org.apache.catalina.LifecycleException: コンポーネント [org.apache.catalina.webresources.StandardRoot@609bcfb6] の開始に失敗しました
+		at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+		at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:191)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:873)
+		... 19 more
+	Caused by: org.apache.catalina.LifecycleException: コンポーネント [org.apache.catalina.webresources.StandardRoot@609bcfb6] の開始に失敗しました
+		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:419)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:186)
+		at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4535)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4668)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+		... 19 more
+	Caused by: java.lang.IllegalArgumentException: 指定されたメインリソースセット [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\wtpwebapps\terasoluna-app] は、ディレクトリまたは war ファイルではないか、読み取り可能ではありません (存在しないか、アクセス許可がありません)
+		at org.apache.catalina.webresources.StandardRoot.createMainResourceSet(StandardRoot.java:749)
+		at org.apache.catalina.webresources.StandardRoot.startInternal(StandardRoot.java:707)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		... 28 more
+02-Apr-2026 15:44:03.145 重大 [main] org.apache.catalina.startup.Catalina.start 必要なサーバーコンポーネントを開始できないため、Tomcat を開始できませんでした。
+	org.apache.catalina.LifecycleException: 子コンテナーを開始できません。
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:885)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:240)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:433)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:917)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:795)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:347)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:478)
+	Caused by: java.util.concurrent.ExecutionException: org.apache.catalina.LifecycleException: 子コンテナーを開始できません。
+		at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+		at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:191)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:873)
+		... 11 more
+	Caused by: org.apache.catalina.LifecycleException: 子コンテナーを開始できません。
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:885)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:845)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+		... 11 more
+	Caused by: java.util.concurrent.ExecutionException: org.apache.catalina.LifecycleException: コンポーネント [org.apache.catalina.webresources.StandardRoot@609bcfb6] の開始に失敗しました
+		at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+		at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:191)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:873)
+		... 19 more
+	Caused by: org.apache.catalina.LifecycleException: コンポーネント [org.apache.catalina.webresources.StandardRoot@609bcfb6] の開始に失敗しました
+		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:419)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:186)
+		at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4535)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4668)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+		... 19 more
+	Caused by: java.lang.IllegalArgumentException: 指定されたメインリソースセット [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\wtpwebapps\terasoluna-app] は、ディレクトリまたは war ファイルではないか、読み取り可能ではありません (存在しないか、アクセス許可がありません)
+		at org.apache.catalina.webresources.StandardRoot.createMainResourceSet(StandardRoot.java:749)
+		at org.apache.catalina.webresources.StandardRoot.startInternal(StandardRoot.java:707)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		... 28 more
+02-Apr-2026 15:44:03.147 情報 [main] org.apache.coyote.AbstractProtocol.pause ProtocolHandler ["http-nio-8080"] を一時停止します。
+02-Apr-2026 15:44:03.147 情報 [main] org.apache.catalina.core.StandardService.stopInternal サービス [Catalina] を停止します
+02-Apr-2026 15:44:03.149 情報 [main] org.apache.coyote.AbstractProtocol.destroy ProtocolHandler ["http-nio-8080"] を破棄します。
+02-Apr-2026 15:45:19.671 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Serverのバージョン名:     Apache Tomcat/10.1.15
+02-Apr-2026 15:45:19.671 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Server ビルド:            Oct 11 2023 23:38:40 UTC
+02-Apr-2026 15:45:19.671 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log サーバーのバージョン番号: 10.1.15.0
+02-Apr-2026 15:45:19.671 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS 名:                    Windows 11
+02-Apr-2026 15:45:19.671 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS バージョン:            10.0
+02-Apr-2026 15:45:19.671 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log アーキテクチャ:           amd64
+02-Apr-2026 15:45:19.671 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                C:\pleiades\2023-12\java\21
+02-Apr-2026 15:45:19.671 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM バージョン:           21.0.1+12-LTS
+02-Apr-2026 15:45:19.671 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM ベンダ:               Eclipse Adoptium
+02-Apr-2026 15:45:19.671 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:            C:\project\terasoluna\tomcat\apache-tomcat-10.1.15
+02-Apr-2026 15:45:19.671 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:            C:\project\terasoluna\tomcat\apache-tomcat-10.1.15
+02-Apr-2026 15:45:19.700 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.config.file=C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\conf\logging.properties
+02-Apr-2026 15:45:19.700 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+02-Apr-2026 15:45:19.700 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djdk.tls.ephemeralDHKeySize=2048
+02-Apr-2026 15:45:19.700 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+02-Apr-2026 15:45:19.700 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.lang=ALL-UNNAMED
+02-Apr-2026 15:45:19.701 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.io=ALL-UNNAMED
+02-Apr-2026 15:45:19.701 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util=ALL-UNNAMED
+02-Apr-2026 15:45:19.701 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+02-Apr-2026 15:45:19.701 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+02-Apr-2026 15:45:19.701 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.base=C:\project\terasoluna\tomcat\apache-tomcat-10.1.15
+02-Apr-2026 15:45:19.701 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.home=C:\project\terasoluna\tomcat\apache-tomcat-10.1.15
+02-Apr-2026 15:45:19.701 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.io.tmpdir=C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\temp
+02-Apr-2026 15:45:19.709 情報 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 商用環境に最適な性能を発揮する APR ベースの Tomcat ネイティブライブラリが java.library.path [C:\pleiades\2023-12\java\21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;c:\Users\ThinhDHQ1\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\ThinhDHQ1\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Users\ThinhDHQ1\AppData\Local\Programs\Microsoft VS Code;C:\Users\ThinhDHQ1\Downloads\WINDOWS.X64_193000_db_home\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\pleiades\2023-12\java\21\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\ibm\gsk8\lib64;C:\Program Files (x86)\ibm\gsk8\lib;C:\PROGRA~1\IBM\SQLLIB\BIN;C:\PROGRA~1\IBM\SQLLIB\FUNCTION;C:\PROGRA~1\IBM\SQLLIB\SAMPLES\REPL;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;$([Environment]::GetEnvironmentVariable('Path','User'));C:\apache-maven-3.9.14\bin;C:\Users\ThinhDHQ1\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\ThinhDHQ1\AppData\Local\Programs\Git\cmd;c:\Users\ThinhDHQ1\.vscode\extensions\vscjava.vscode-java-debug-0.58.5\bundled\scripts\noConfigScripts;.] に存在しません。
+02-Apr-2026 15:45:19.975 情報 [main] org.apache.coyote.AbstractProtocol.init プロトコルハンドラ ["http-nio-8080"] を初期化します。
+02-Apr-2026 15:45:20.009 情報 [main] org.apache.catalina.startup.Catalina.load サーバーの初期化 [499] ミリ秒
+02-Apr-2026 15:45:20.088 情報 [main] org.apache.catalina.core.StandardService.startInternal サービス [Catalina] を起動します
+02-Apr-2026 15:45:20.088 情報 [main] org.apache.catalina.core.StandardEngine.startInternal サーブレットエンジンの起動：[Apache Tomcat/10.1.15]
+02-Apr-2026 15:45:20.139 情報 [main] org.apache.catalina.startup.HostConfig.deployWAR Webアプリケーションアーカイブ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\terasoluna-app.war] を配備します
+02-Apr-2026 15:45:33.893 情報 [main] org.apache.jasper.servlet.TldScanner.scanJars 少なくとも1つのJARでTLDをスキャンしましたが、TLDが含まれていませんでした。スキャンしたもののTLDが見つからなかったJARの完全なリストについては、このロガーのデバッグログを有効にしてください。スキャン中に不要なJARをスキップすると、起動時間とJSPのコンパイル時間が短縮されます。
+02-Apr-2026 15:45:35.813 重大 [main] org.apache.catalina.core.StandardContext.startInternal 1つまたは複数のリスナーが開始に失敗しました。 完全な詳細は適切なコンテナログファイルにあります。
+02-Apr-2026 15:45:35.831 重大 [main] org.apache.catalina.core.StandardContext.startInternal 以前のエラーのためにコンテキストの起動が失敗しました [/terasoluna-app]
+02-Apr-2026 15:45:36.067 警告 [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc Web アプリケーション [terasoluna-app] は自身で登録した JDBC ドライバー [oracle.jdbc.OracleDriver] を停止時に解除できませんでした。メモリーリークの発生を防ぐには JDBC ドライバーを強制的に解除してください。
+02-Apr-2026 15:45:36.069 情報 [main] org.apache.catalina.startup.HostConfig.deployWAR Web アプリケーションアーカイブ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\terasoluna-app.war] の配備は [15,930] ミリ秒で完了しました
+02-Apr-2026 15:45:36.069 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\docs] を配備します
+02-Apr-2026 15:45:36.122 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\docs] の Web アプリケーションの配備は [52] ミリ秒で完了しました。
+02-Apr-2026 15:45:36.122 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\examples] を配備します
+02-Apr-2026 15:45:36.385 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\examples] の Web アプリケーションの配備は [263] ミリ秒で完了しました。
+02-Apr-2026 15:45:36.385 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\host-manager] を配備します
+02-Apr-2026 15:45:36.437 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\host-manager] の Web アプリケーションの配備は [50] ミリ秒で完了しました。
+02-Apr-2026 15:45:36.438 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\manager] を配備します
+02-Apr-2026 15:45:36.474 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\manager] の Web アプリケーションの配備は [37] ミリ秒で完了しました。
+02-Apr-2026 15:45:36.475 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\ROOT] を配備します
+02-Apr-2026 15:45:36.494 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\ROOT] の Web アプリケーションの配備は [19] ミリ秒で完了しました。
+02-Apr-2026 15:45:36.498 情報 [main] org.apache.coyote.AbstractProtocol.start プロトコルハンドラー ["http-nio-8080"] を開始しました。
+02-Apr-2026 15:45:36.545 情報 [main] org.apache.catalina.startup.Catalina.start サーバーの起動 [16534] ミリ秒
+02-Apr-2026 15:50:56.863 情報 [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy コンテキストパス [/terasoluna-app] のWebアプリケーションの配備を解除します
+02-Apr-2026 15:50:56.987 情報 [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Webアプリケーションアーカイブ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\terasoluna-app.war] を配備します
+02-Apr-2026 15:51:14.770 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Serverのバージョン名:     Apache Tomcat/10.1.15
+02-Apr-2026 15:51:14.778 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Server ビルド:            Oct 11 2023 23:38:40 UTC
+02-Apr-2026 15:51:14.779 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log サーバーのバージョン番号: 10.1.15.0
+02-Apr-2026 15:51:14.779 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS 名:                    Windows 11
+02-Apr-2026 15:51:14.779 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS バージョン:            10.0
+02-Apr-2026 15:51:14.780 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log アーキテクチャ:           amd64
+02-Apr-2026 15:51:14.780 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                C:\pleiades\2023-12\java\21
+02-Apr-2026 15:51:14.780 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM バージョン:           21.0.1+12-LTS
+02-Apr-2026 15:51:14.780 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM ベンダ:               Eclipse Adoptium
+02-Apr-2026 15:51:14.780 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:            C:\project\terasoluna\tomcat\apache-tomcat-10.1.15
+02-Apr-2026 15:51:14.780 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:            C:\project\terasoluna\tomcat\apache-tomcat-10.1.15
+02-Apr-2026 15:51:14.794 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.config.file=C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\conf\logging.properties
+02-Apr-2026 15:51:14.794 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+02-Apr-2026 15:51:14.795 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djdk.tls.ephemeralDHKeySize=2048
+02-Apr-2026 15:51:14.795 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+02-Apr-2026 15:51:14.795 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.lang=ALL-UNNAMED
+02-Apr-2026 15:51:14.795 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.io=ALL-UNNAMED
+02-Apr-2026 15:51:14.795 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util=ALL-UNNAMED
+02-Apr-2026 15:51:14.795 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+02-Apr-2026 15:51:14.795 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+02-Apr-2026 15:51:14.795 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.base=C:\project\terasoluna\tomcat\apache-tomcat-10.1.15
+02-Apr-2026 15:51:14.795 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.home=C:\project\terasoluna\tomcat\apache-tomcat-10.1.15
+02-Apr-2026 15:51:14.795 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.io.tmpdir=C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\temp
+02-Apr-2026 15:51:14.803 情報 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 商用環境に最適な性能を発揮する APR ベースの Tomcat ネイティブライブラリが java.library.path [C:\pleiades\2023-12\java\21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;c:\Users\ThinhDHQ1\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\ThinhDHQ1\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Users\ThinhDHQ1\AppData\Local\Programs\Microsoft VS Code;C:\Users\ThinhDHQ1\Downloads\WINDOWS.X64_193000_db_home\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\pleiades\2023-12\java\21\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\ibm\gsk8\lib64;C:\Program Files (x86)\ibm\gsk8\lib;C:\PROGRA~1\IBM\SQLLIB\BIN;C:\PROGRA~1\IBM\SQLLIB\FUNCTION;C:\PROGRA~1\IBM\SQLLIB\SAMPLES\REPL;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;$([Environment]::GetEnvironmentVariable('Path','User'));C:\apache-maven-3.9.14\bin;C:\Users\ThinhDHQ1\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\ThinhDHQ1\AppData\Local\Programs\Git\cmd;c:\Users\ThinhDHQ1\.vscode\extensions\vscjava.vscode-java-debug-0.58.5\bundled\scripts\noConfigScripts;.] に存在しません。
+02-Apr-2026 15:51:15.064 情報 [main] org.apache.coyote.AbstractProtocol.init プロトコルハンドラ ["http-nio-8080"] を初期化します。
+02-Apr-2026 15:51:15.095 情報 [main] org.apache.catalina.startup.Catalina.load サーバーの初期化 [531] ミリ秒
+02-Apr-2026 15:51:15.161 情報 [main] org.apache.catalina.core.StandardService.startInternal サービス [Catalina] を起動します
+02-Apr-2026 15:51:15.161 情報 [main] org.apache.catalina.core.StandardEngine.startInternal サーブレットエンジンの起動：[Apache Tomcat/10.1.15]
+02-Apr-2026 15:51:15.208 情報 [main] org.apache.catalina.startup.HostConfig.deployWAR Webアプリケーションアーカイブ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\terasoluna-app.war] を配備します
+02-Apr-2026 15:51:25.125 情報 [main] org.apache.jasper.servlet.TldScanner.scanJars 少なくとも1つのJARでTLDをスキャンしましたが、TLDが含まれていませんでした。スキャンしたもののTLDが見つからなかったJARの完全なリストについては、このロガーのデバッグログを有効にしてください。スキャン中に不要なJARをスキップすると、起動時間とJSPのコンパイル時間が短縮されます。
+02-Apr-2026 15:51:26.762 重大 [main] org.apache.catalina.core.StandardContext.startInternal 1つまたは複数のリスナーが開始に失敗しました。 完全な詳細は適切なコンテナログファイルにあります。
+02-Apr-2026 15:51:26.782 重大 [main] org.apache.catalina.core.StandardContext.startInternal 以前のエラーのためにコンテキストの起動が失敗しました [/terasoluna-app]
+02-Apr-2026 15:51:27.036 警告 [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc Web アプリケーション [terasoluna-app] は自身で登録した JDBC ドライバー [oracle.jdbc.OracleDriver] を停止時に解除できませんでした。メモリーリークの発生を防ぐには JDBC ドライバーを強制的に解除してください。
+02-Apr-2026 15:51:27.043 情報 [main] org.apache.catalina.startup.HostConfig.deployWAR Web アプリケーションアーカイブ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\terasoluna-app.war] の配備は [11,834] ミリ秒で完了しました
+02-Apr-2026 15:51:27.043 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\docs] を配備します
+02-Apr-2026 15:51:27.099 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\docs] の Web アプリケーションの配備は [56] ミリ秒で完了しました。
+02-Apr-2026 15:51:27.100 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\examples] を配備します
+02-Apr-2026 15:51:27.473 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\examples] の Web アプリケーションの配備は [373] ミリ秒で完了しました。
+02-Apr-2026 15:51:27.473 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\host-manager] を配備します
+02-Apr-2026 15:51:27.506 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\host-manager] の Web アプリケーションの配備は [32] ミリ秒で完了しました。
+02-Apr-2026 15:51:27.506 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\manager] を配備します
+02-Apr-2026 15:51:27.538 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\manager] の Web アプリケーションの配備は [31] ミリ秒で完了しました。
+02-Apr-2026 15:51:27.538 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\ROOT] を配備します
+02-Apr-2026 15:51:27.564 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\ROOT] の Web アプリケーションの配備は [26] ミリ秒で完了しました。
+02-Apr-2026 15:51:27.567 情報 [main] org.apache.coyote.AbstractProtocol.start プロトコルハンドラー ["http-nio-8080"] を開始しました。
+02-Apr-2026 15:51:27.588 情報 [main] org.apache.catalina.startup.Catalina.start サーバーの起動 [12490] ミリ秒
+02-Apr-2026 15:52:31.253 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Serverのバージョン名:     Apache Tomcat/10.1.15
+02-Apr-2026 15:52:31.257 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Server ビルド:            Oct 11 2023 23:38:40 UTC
+02-Apr-2026 15:52:31.258 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log サーバーのバージョン番号: 10.1.15.0
+02-Apr-2026 15:52:31.258 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS 名:                    Windows 11
+02-Apr-2026 15:52:31.258 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS バージョン:            10.0
+02-Apr-2026 15:52:31.258 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log アーキテクチャ:           amd64
+02-Apr-2026 15:52:31.258 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                C:\pleiades\2023-12\java\21
+02-Apr-2026 15:52:31.258 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM バージョン:           21.0.1+12-LTS
+02-Apr-2026 15:52:31.258 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM ベンダ:               Eclipse Adoptium
+02-Apr-2026 15:52:31.258 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:            C:\project\terasoluna\tomcat\apache-tomcat-10.1.15
+02-Apr-2026 15:52:31.258 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:            C:\project\terasoluna\tomcat\apache-tomcat-10.1.15
+02-Apr-2026 15:52:31.270 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.config.file=C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\conf\logging.properties
+02-Apr-2026 15:52:31.271 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+02-Apr-2026 15:52:31.271 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djdk.tls.ephemeralDHKeySize=2048
+02-Apr-2026 15:52:31.271 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+02-Apr-2026 15:52:31.271 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.lang=ALL-UNNAMED
+02-Apr-2026 15:52:31.271 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.io=ALL-UNNAMED
+02-Apr-2026 15:52:31.272 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util=ALL-UNNAMED
+02-Apr-2026 15:52:31.272 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+02-Apr-2026 15:52:31.272 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+02-Apr-2026 15:52:31.272 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.base=C:\project\terasoluna\tomcat\apache-tomcat-10.1.15
+02-Apr-2026 15:52:31.273 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.home=C:\project\terasoluna\tomcat\apache-tomcat-10.1.15
+02-Apr-2026 15:52:31.273 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.io.tmpdir=C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\temp
+02-Apr-2026 15:52:31.278 情報 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 商用環境に最適な性能を発揮する APR ベースの Tomcat ネイティブライブラリが java.library.path [C:\pleiades\2023-12\java\21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;c:\Users\ThinhDHQ1\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\ThinhDHQ1\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Users\ThinhDHQ1\AppData\Local\Programs\Microsoft VS Code;C:\Users\ThinhDHQ1\Downloads\WINDOWS.X64_193000_db_home\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\pleiades\2023-12\java\21\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\ibm\gsk8\lib64;C:\Program Files (x86)\ibm\gsk8\lib;C:\PROGRA~1\IBM\SQLLIB\BIN;C:\PROGRA~1\IBM\SQLLIB\FUNCTION;C:\PROGRA~1\IBM\SQLLIB\SAMPLES\REPL;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;$([Environment]::GetEnvironmentVariable('Path','User'));C:\apache-maven-3.9.14\bin;C:\Users\ThinhDHQ1\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\ThinhDHQ1\AppData\Local\Programs\Git\cmd;c:\Users\ThinhDHQ1\.vscode\extensions\vscjava.vscode-java-debug-0.58.5\bundled\scripts\noConfigScripts;.] に存在しません。
+02-Apr-2026 15:52:31.543 情報 [main] org.apache.coyote.AbstractProtocol.init プロトコルハンドラ ["http-nio-8080"] を初期化します。
+02-Apr-2026 15:52:31.573 情報 [main] org.apache.catalina.startup.Catalina.load サーバーの初期化 [497] ミリ秒
+02-Apr-2026 15:52:31.650 情報 [main] org.apache.catalina.core.StandardService.startInternal サービス [Catalina] を起動します
+02-Apr-2026 15:52:31.650 情報 [main] org.apache.catalina.core.StandardEngine.startInternal サーブレットエンジンの起動：[Apache Tomcat/10.1.15]
+02-Apr-2026 15:52:31.688 情報 [main] org.apache.catalina.startup.HostConfig.deployWAR Webアプリケーションアーカイブ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\terasoluna-app.war] を配備します
+02-Apr-2026 15:52:34.331 情報 [main] org.apache.jasper.servlet.TldScanner.scanJars 少なくとも1つのJARでTLDをスキャンしましたが、TLDが含まれていませんでした。スキャンしたもののTLDが見つからなかったJARの完全なリストについては、このロガーのデバッグログを有効にしてください。スキャン中に不要なJARをスキップすると、起動時間とJSPのコンパイル時間が短縮されます。
+02-Apr-2026 15:52:35.902 重大 [main] org.apache.catalina.core.StandardContext.startInternal 1つまたは複数のリスナーが開始に失敗しました。 完全な詳細は適切なコンテナログファイルにあります。
+02-Apr-2026 15:52:35.918 重大 [main] org.apache.catalina.core.StandardContext.startInternal 以前のエラーのためにコンテキストの起動が失敗しました [/terasoluna-app]
+02-Apr-2026 15:52:36.174 警告 [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc Web アプリケーション [terasoluna-app] は自身で登録した JDBC ドライバー [oracle.jdbc.OracleDriver] を停止時に解除できませんでした。メモリーリークの発生を防ぐには JDBC ドライバーを強制的に解除してください。
+02-Apr-2026 15:52:36.183 情報 [main] org.apache.catalina.startup.HostConfig.deployWAR Web アプリケーションアーカイブ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\terasoluna-app.war] の配備は [4,495] ミリ秒で完了しました
+02-Apr-2026 15:52:36.183 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\docs] を配備します
+02-Apr-2026 15:52:36.228 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\docs] の Web アプリケーションの配備は [45] ミリ秒で完了しました。
+02-Apr-2026 15:52:36.228 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\examples] を配備します
+02-Apr-2026 15:52:36.578 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\examples] の Web アプリケーションの配備は [350] ミリ秒で完了しました。
+02-Apr-2026 15:52:36.578 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\host-manager] を配備します
+02-Apr-2026 15:52:36.641 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\host-manager] の Web アプリケーションの配備は [63] ミリ秒で完了しました。
+02-Apr-2026 15:52:36.641 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\manager] を配備します
+02-Apr-2026 15:52:36.688 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\manager] の Web アプリケーションの配備は [46] ミリ秒で完了しました。
+02-Apr-2026 15:52:36.688 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\ROOT] を配備します
+02-Apr-2026 15:52:36.716 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\ROOT] の Web アプリケーションの配備は [27] ミリ秒で完了しました。
+02-Apr-2026 15:52:36.721 情報 [main] org.apache.coyote.AbstractProtocol.start プロトコルハンドラー ["http-nio-8080"] を開始しました。
+02-Apr-2026 15:52:36.757 情報 [main] org.apache.catalina.startup.Catalina.start サーバーの起動 [5181] ミリ秒
+02-Apr-2026 15:56:26.802 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Serverのバージョン名:     Apache Tomcat/10.1.15
+02-Apr-2026 15:56:26.802 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Server ビルド:            Oct 11 2023 23:38:40 UTC
+02-Apr-2026 15:56:26.802 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log サーバーのバージョン番号: 10.1.15.0
+02-Apr-2026 15:56:26.802 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS 名:                    Windows 11
+02-Apr-2026 15:56:26.802 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS バージョン:            10.0
+02-Apr-2026 15:56:26.802 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log アーキテクチャ:           amd64
+02-Apr-2026 15:56:26.802 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                C:\pleiades\2023-12\java\21
+02-Apr-2026 15:56:26.802 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM バージョン:           21.0.1+12-LTS
+02-Apr-2026 15:56:26.802 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM ベンダ:               Eclipse Adoptium
+02-Apr-2026 15:56:26.802 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:            C:\project\terasoluna\tomcat\apache-tomcat-10.1.15
+02-Apr-2026 15:56:26.802 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:            C:\project\terasoluna\tomcat\apache-tomcat-10.1.15
+02-Apr-2026 15:56:26.815 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.config.file=C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\conf\logging.properties
+02-Apr-2026 15:56:26.815 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+02-Apr-2026 15:56:26.815 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djdk.tls.ephemeralDHKeySize=2048
+02-Apr-2026 15:56:26.815 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+02-Apr-2026 15:56:26.815 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.lang=ALL-UNNAMED
+02-Apr-2026 15:56:26.815 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.io=ALL-UNNAMED
+02-Apr-2026 15:56:26.815 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util=ALL-UNNAMED
+02-Apr-2026 15:56:26.815 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+02-Apr-2026 15:56:26.815 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+02-Apr-2026 15:56:26.815 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.base=C:\project\terasoluna\tomcat\apache-tomcat-10.1.15
+02-Apr-2026 15:56:26.815 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.home=C:\project\terasoluna\tomcat\apache-tomcat-10.1.15
+02-Apr-2026 15:56:26.815 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.io.tmpdir=C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\temp
+02-Apr-2026 15:56:26.815 情報 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 商用環境に最適な性能を発揮する APR ベースの Tomcat ネイティブライブラリが java.library.path [C:\pleiades\2023-12\java\21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;c:\Users\ThinhDHQ1\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\ThinhDHQ1\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Users\ThinhDHQ1\AppData\Local\Programs\Microsoft VS Code;C:\Users\ThinhDHQ1\Downloads\WINDOWS.X64_193000_db_home\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\pleiades\2023-12\java\21\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\ibm\gsk8\lib64;C:\Program Files (x86)\ibm\gsk8\lib;C:\PROGRA~1\IBM\SQLLIB\BIN;C:\PROGRA~1\IBM\SQLLIB\FUNCTION;C:\PROGRA~1\IBM\SQLLIB\SAMPLES\REPL;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;$([Environment]::GetEnvironmentVariable('Path','User'));C:\apache-maven-3.9.14\bin;C:\Users\ThinhDHQ1\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\ThinhDHQ1\AppData\Local\Programs\Git\cmd;c:\Users\ThinhDHQ1\.vscode\extensions\vscjava.vscode-java-debug-0.58.5\bundled\scripts\noConfigScripts;.] に存在しません。
+02-Apr-2026 15:56:27.102 情報 [main] org.apache.coyote.AbstractProtocol.init プロトコルハンドラ ["http-nio-8080"] を初期化します。
+02-Apr-2026 15:56:27.132 情報 [main] org.apache.catalina.startup.Catalina.load サーバーの初期化 [526] ミリ秒
+02-Apr-2026 15:56:27.197 情報 [main] org.apache.catalina.core.StandardService.startInternal サービス [Catalina] を起動します
+02-Apr-2026 15:56:27.198 情報 [main] org.apache.catalina.core.StandardEngine.startInternal サーブレットエンジンの起動：[Apache Tomcat/10.1.15]
+02-Apr-2026 15:56:27.263 情報 [main] org.apache.catalina.startup.HostConfig.deployWAR Webアプリケーションアーカイブ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\terasoluna-app.war] を配備します
+02-Apr-2026 15:56:27.263 情報 [main] org.apache.catalina.startup.ExpandWar.expand 関連付けられた WAR ファイルと最終更新日時の異なる展開先ディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\terasoluna-app] が見つかりました。削除します。
+02-Apr-2026 15:56:42.618 情報 [main] org.apache.jasper.servlet.TldScanner.scanJars 少なくとも1つのJARでTLDをスキャンしましたが、TLDが含まれていませんでした。スキャンしたもののTLDが見つからなかったJARの完全なリストについては、このロガーのデバッグログを有効にしてください。スキャン中に不要なJARをスキップすると、起動時間とJSPのコンパイル時間が短縮されます。
+02-Apr-2026 15:56:49.400 情報 [main] org.apache.catalina.startup.HostConfig.deployWAR Web アプリケーションアーカイブ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\terasoluna-app.war] の配備は [22,136] ミリ秒で完了しました
+02-Apr-2026 15:56:49.402 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\docs] を配備します
+02-Apr-2026 15:56:49.444 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\docs] の Web アプリケーションの配備は [42] ミリ秒で完了しました。
+02-Apr-2026 15:56:49.445 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\examples] を配備します
+02-Apr-2026 15:56:49.958 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\examples] の Web アプリケーションの配備は [513] ミリ秒で完了しました。
+02-Apr-2026 15:56:49.958 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\host-manager] を配備します
+02-Apr-2026 15:56:50.013 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\host-manager] の Web アプリケーションの配備は [55] ミリ秒で完了しました。
+02-Apr-2026 15:56:50.014 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\manager] を配備します
+02-Apr-2026 15:56:50.076 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\manager] の Web アプリケーションの配備は [61] ミリ秒で完了しました。
+02-Apr-2026 15:56:50.076 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\ROOT] を配備します
+02-Apr-2026 15:56:50.098 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [C:\project\terasoluna\tomcat\apache-tomcat-10.1.15\webapps\ROOT] の Web アプリケーションの配備は [22] ミリ秒で完了しました。
+02-Apr-2026 15:56:50.115 情報 [main] org.apache.coyote.AbstractProtocol.start プロトコルハンドラー ["http-nio-8080"] を開始しました。
+02-Apr-2026 15:56:50.150 情報 [main] org.apache.catalina.startup.Catalina.start サーバーの起動 [23015] ミリ秒

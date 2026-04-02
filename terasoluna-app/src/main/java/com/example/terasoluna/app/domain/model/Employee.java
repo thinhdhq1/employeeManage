@@ -2,30 +2,30 @@ package com.example.terasoluna.app.domain.model;
 
 public class Employee {
 
-	private String employeeId;
+	private Integer employeeId;
 	private String name;
 	private int age;
-	private String birthday;
+	private String birth;
 	private String address;
-	private String phone;
+	private String phoneNumber;
 
 	public Employee() {
 	}
 
-	public Employee(String employeeId, String name, int age, String birthday, String address, String phone) {
+	public Employee(Integer employeeId, String name, int age, String birth, String address, String phoneNumber) {
 		this.employeeId = employeeId;
 		this.name = name;
 		this.age = age;
-		this.birthday = birthday;
+		this.birth = birth;
 		this.address = address;
-		this.phone = phone;
+		this.phoneNumber = phoneNumber;
 	}
 
-	public String getEmployeeId() {
+	public Integer getEmployeeId() {
 		return employeeId;
 	}
 
-	public void setEmployeeId(String employeeId) {
+	public void setEmployeeId(Integer employeeId) {
 		this.employeeId = employeeId;
 	}
 
@@ -45,12 +45,12 @@ public class Employee {
 		this.age = age;
 	}
 
-	public String getBirthday() {
-		return birthday;
+	public String getBirth() {
+		return birth;
 	}
 
-	public void setBirthday(String birthday) {
-		this.birthday = birthday;
+	public void setBirth(String birth) {
+		this.birth = birth;
 	}
 
 	public String getAddress() {
@@ -61,11 +61,11 @@ public class Employee {
 		this.address = address;
 	}
 
-	public String getPhone() {
-		return phone;
+	public String getPhoneNumber() {
+		return phoneNumber;
 	}
 
-	public void setPhone(String phone) {
-		this.phone = phone;
+	public void setPhoneNumber(String phoneNumber) {
+		this.phoneNumber = phoneNumber;
 	}
 }

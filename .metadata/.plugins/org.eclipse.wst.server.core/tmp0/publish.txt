@@ -1,4 +1,4 @@
 #Tomcat publish data
-#Thu Apr 02 09:07:56 JST 2026
+#Thu Apr 02 16:03:06 JST 2026
 org.eclipse.jst.jee.server\:terasoluna-app=C\:\\project\\terasoluna\\tomcat\\apache-tomcat-10.1.15\\wtpwebapps\\terasoluna-app
 org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\ThinhDHQ1\\.m2\\repository\\org\\springframework\\spring-web\\6.2.1\\spring-web-6.2.1.jar=C\:\\project\\terasoluna\\tomcat\\apache-tomcat-10.1.15\\wtpwebapps\\terasoluna-app\\WEB-INF\\lib\\spring-web-6.2.1.jar

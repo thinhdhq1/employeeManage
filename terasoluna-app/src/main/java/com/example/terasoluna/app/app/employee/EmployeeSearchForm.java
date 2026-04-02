@@ -18,15 +18,15 @@ public class EmployeeSearchForm {
     @Max(value = 120, message = "{employee.search.age.max}")
     private Integer age;
 
-    @Size(max = 30, message = "{employee.search.birthday.max}")
-    private String birthday;
+    @Size(max = 10, message = "{employee.search.birth.max}")
+    private String birth;
 
-    @Size(max = 200, message = "{employee.search.address.max}")
+    @Size(max = 100, message = "{employee.search.address.max}")
     private String address;
 
-    @Size(max = 20, message = "{employee.search.phone.max}")
-    @Pattern(regexp = "^$|^[0-9-]+$", message = "{employee.search.phone.format}")
-    private String phone;
+    @Size(max = 10, message = "{employee.search.phoneNumber.max}")
+    @Pattern(regexp = "^$|^[0-9-]+$", message = "{employee.search.phoneNumber.format}")
+    private String phoneNumber;
 
     public String getEmployeeId() {
         return employeeId;
@@ -52,12 +52,12 @@ public class EmployeeSearchForm {
         this.age = age;
     }
 
-    public String getBirthday() {
-        return birthday;
+    public String getBirth() {
+        return birth;
     }
 
-    public void setBirthday(String birthday) {
-        this.birthday = birthday;
+    public void setBirth(String birth) {
+        this.birth = birth;
     }
 
     public String getAddress() {
@@ -68,11 +68,11 @@ public class EmployeeSearchForm {
         this.address = address;
     }
 
-    public String getPhone() {
-        return phone;
+    public String getPhoneNumber() {
+        return phoneNumber;
     }
 
-    public void setPhone(String phone) {
-        this.phone = phone;
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 }

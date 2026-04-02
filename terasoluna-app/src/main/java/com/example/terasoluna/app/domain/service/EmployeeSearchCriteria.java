@@ -4,7 +4,7 @@ public record EmployeeSearchCriteria(
         String employeeId,
         String name,
         Integer age,
-        String birthday,
+        String birth,
         String address,
-        String phone) {
+        String phoneNumber) {
 }

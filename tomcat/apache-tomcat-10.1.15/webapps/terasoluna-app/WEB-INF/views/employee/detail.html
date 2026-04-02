@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>職員詳細</title>
+        <link rel="stylesheet" href="../../../resources/app/css/employee-detail.css" th:href="@{/resources/app/css/employee-detail.css}" />
+        <style>
+            form { display: inline; }
+            button { cursor: pointer; }
+            button:disabled { cursor: not-allowed; opacity: 0.6; }
+            .edit-mode-hidden { display: none; }
+            .view-mode-hidden { display: none; }
+            .edit-mode .view-mode-hidden { display: block; }
+            .edit-mode .edit-mode-hidden { display: none; }
+            input[readonly] { background-color: #f5f5f5; cursor: default; }
+            input:not([readonly]) { background-color: #fff; cursor: text; }
+        </style>
+        <script>
+            function toggleEditMode() {
+                const form = document.getElementById('employeeForm');
+                const inputs = form.querySelectorAll('input[type="text"], input[type="number"]');
+                const isReadonly = inputs[0].readOnly;
+                
+                inputs.forEach(input => {
+                    input.readOnly = !isReadonly;
+                });
+                
+                form.classList.toggle('edit-mode');
+            }
+            
+            function cancelEdit() {
+                location.reload();
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="page-header">
+                <h1>職員詳細</h1>
+                <div class="header-actions">
+                    <a class="secondary-btn" th:href="@{/employee/search(page=${backPage},size=${backSize},employeeId=${backEmployeeId},name=${backName},age=${backAge},birth=${backBirth},address=${backAddress},phoneNumber=${backPhoneNumber})}">一覧へ戻る</a>
+                </div>
+            </div>
+
+            <div class="card" th:if="${employee != null}">
+                <div class="section-title">
+                    <h3>基本情報</h3>
+                    <span class="subtext">主キー: 職員ID</span>
+                </div>
+
+                <form id="employeeForm" th:action="@{/employee/detail/{id}/update(id=${employee.employeeId},page=${backPage},size=${backSize},backEmployeeId=${backEmployeeId},backName=${backName},backAge=${backAge},backBirth=${backBirth},backAddress=${backAddress},backPhoneNumber=${backPhoneNumber})}" method="POST">
+                    <div class="grid">
+                        <div class="field">
+                            <label>職員ID</label>
+                            <input type="text" th:value="${employee.employeeId}" readonly />
+                        </div>
+                        <div class="field">
+                            <label>氏名</label>
+                            <input type="text" name="name" th:value="${employee.name}" readonly />
+                        </div>
+                        <div class="field">
+                            <label>年齢</label>
+                            <input type="number" name="age" th:value="${employee.age}" readonly />
+                        </div>
+                        <div class="field">
+                            <label>誕生日</label>
+                            <input type="text" name="birth" th:value="${employee.birth}" readonly />
+                        </div>
+                        <div class="field full">
+                            <label>住所</label>
+                            <input type="text" name="address" th:value="${employee.address}" readonly />
+                        </div>
+                        <div class="field full">
+                            <label>電話番号</label>
+                            <input type="text" name="phoneNumber" th:value="${employee.phoneNumber}" readonly />
+                        </div>
+                    </div>
+
+                    <div class="button-group">
+                        <button type="button" class="primary-btn edit-mode-hidden" onclick="toggleEditMode()">編集</button>
+                        <button type="submit" class="primary-btn view-mode-hidden">保存</button>
+                        <button type="button" class="secondary-btn view-mode-hidden" onclick="cancelEdit()">キャンセル</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="card" th:if="${employee == null}">
+                <h3>データが見つかりませんでした</h3>
+                <p class="subtext">指定された職員ID: <span th:text="${notFoundEmployeeId}">-</span></p>
+            </div>
+        </div>
+    </body>
+</html>

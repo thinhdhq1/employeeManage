@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>職員管理</title>
+        <link rel="stylesheet" href="../../../resources/app/css/employee-search.css" th:href="@{/resources/app/css/employee-search.css}" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>職員管理</h1>
+
+            <div class="card">
+                <h3>検索条件</h3>
+                <form th:action="@{/employee/search}" method="get" th:object="${employeeSearchForm}">
+                    <div class="grid">
+                        <div>
+                            <label for="employeeId">職員ID</label>
+                            <input id="employeeId" th:field="*{employeeId}" type="text" placeholder="職員IDを入力" />
+                            <div class="field-error" th:if="${#fields.hasErrors('employeeId')}" th:errors="*{employeeId}">職員IDエラー</div>
+                        </div>
+                        <div>
+                            <label for="name">氏名</label>
+                            <input id="name" th:field="*{name}" type="text" placeholder="氏名を入力" />
+                            <div class="field-error" th:if="${#fields.hasErrors('name')}" th:errors="*{name}">氏名エラー</div>
+                        </div>
+                        <div>
+                            <label for="age">年齢</label>
+                            <input id="age" th:field="*{age}" type="number" placeholder="年齢" />
+                            <div class="field-error" th:if="${#fields.hasErrors('age')}" th:errors="*{age}">年齢エラー</div>
+                        </div>
+                        <div>
+                            <label for="birth">誕生日</label>
+                            <input id="birth" th:field="*{birth}" type="text" placeholder="yyyy/mm/dd または 和暦" />
+                            <div class="field-error" th:if="${#fields.hasErrors('birth')}" th:errors="*{birth}">誕生日エラー</div>
+                        </div>
+                        <div>
+                            <label for="address">住所</label>
+                            <input id="address" th:field="*{address}" type="text" placeholder="住所を入力" />
+                            <div class="field-error" th:if="${#fields.hasErrors('address')}" th:errors="*{address}">住所エラー</div>
+                        </div>
+                        <div>
+                            <label for="phoneNumber">電話番号</label>
+                            <input id="phoneNumber" th:field="*{phoneNumber}" type="text" placeholder="電話番号を入力" />
+                            <div class="field-error" th:if="${#fields.hasErrors('phoneNumber')}" th:errors="*{phoneNumber}">電話番号エラー</div>
+                        </div>
+                    </div>
+
+                    <div class="actions">
+                        <button class="search-btn" type="submit">検索</button>
+                        <a class="clear-btn" th:href="@{/employee/search}">クリア</a>
+                    </div>
+                </form>
+            </div>
+
+            <div class="card">
+                <h3>検索結果一覧</h3>
+                <p><span th:text="${resultCount}">0</span> 件が該当しました。</p>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>職員ID</th>
+                            <th>氏名</th>
+                            <th>年齢</th>
+                            <th>誕生日（和暦）</th>
+                            <th>住所</th>
+                            <th>電話番号</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr th:if="${#lists.isEmpty(employees)}">
+                            <td colspan="6">データがありません。</td>
+                        </tr>
+                        <tr th:each="employee : ${employees}">
+                            <td th:text="${employee.employeeId}">10001</td>
+                            <td th:text="${employee.name}">山田 太郎</td>
+                            <td th:text="${employee.age}">35</td>
+                            <td th:text="${employee.birth}">昭和55年5月10日</td>
+                            <td th:text="${employee.address}">東京都新宿区西新宿2-8-1</td>
+                            <td th:text="${employee.phoneNumber}">03-1234-5678</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="pagination">
+                          <a class="page-btn" th:classappend="${!hasPrev} ? ' disabled'"
+                              th:href="${hasPrev} ? @{/employee/search(page=${prevPage},size=${size},employeeId=${employeeSearchForm.employeeId},name=${employeeSearchForm.name},age=${employeeSearchForm.age},birth=${employeeSearchForm.birth},address=${employeeSearchForm.address},phoneNumber=${employeeSearchForm.phoneNumber})} : '#'">&lt;</a>
+                          <a class="page-btn"
+                              th:each="pageLink : ${pageLinks}"
+                              th:classappend="${pageLink.current} ? ' current'"
+                              th:href="@{/employee/search(page=${pageLink.pageNumber},size=${size},employeeId=${employeeSearchForm.employeeId},name=${employeeSearchForm.name},age=${employeeSearchForm.age},birth=${employeeSearchForm.birth},address=${employeeSearchForm.address},phoneNumber=${employeeSearchForm.phoneNumber})}"
+                              th:text="${pageLink.pageNumber}">1</a>
+                          <a class="page-btn" th:classappend="${!hasNext} ? ' disabled'"
+                              th:href="${hasNext} ? @{/employee/search(page=${nextPage},size=${size},employeeId=${employeeSearchForm.employeeId},name=${employeeSearchForm.name},age=${employeeSearchForm.age},birth=${employeeSearchForm.birth},address=${employeeSearchForm.address},phoneNumber=${employeeSearchForm.phoneNumber})} : '#'">&gt;</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -5,38 +5,38 @@
 <mapper namespace="com.example.terasoluna.app.domain.repository.EmployeeMapper">
 
     <resultMap id="employeeResultMap" type="com.example.terasoluna.app.domain.model.Employee">
-        <id column="employee_id" property="employeeId"/>
-        <result column="name" property="name"/>
-        <result column="age" property="age"/>
-        <result column="birthday" property="birthday"/>
-        <result column="address" property="address"/>
-        <result column="phone" property="phone"/>
+        <id column="EMPLOYEEID" property="employeeId"/>
+        <result column="NAME" property="name"/>
+        <result column="AGE" property="age"/>
+        <result column="BIRTH" property="birth"/>
+        <result column="ADDRESS" property="address"/>
+        <result column="PHONENUMBER" property="phoneNumber"/>
     </resultMap>
 
     <sql id="employeeColumns">
-        employee_id, name, age, birthday, address, phone
+        EMPLOYEEID, NAME, AGE, BIRTH, ADDRESS, PHONENUMBER
     </sql>
 
     <sql id="searchWhere">
         <where>
             1 = 1
-            <if test="criteria.employeeId != null and criteria.employeeId != ''">
-                AND employee_id LIKE '%' || #{criteria.employeeId} || '%'
+            <if test="criteria.employeeId != null">
+                AND TO_CHAR(EMPLOYEEID) LIKE '%' || #{criteria.employeeId} || '%'
             </if>
             <if test="criteria.name != null and criteria.name != ''">
-                AND name LIKE '%' || #{criteria.name} || '%'
+                AND NAME LIKE '%' || #{criteria.name} || '%'
             </if>
             <if test="criteria.age != null">
-                AND age = #{criteria.age}
+                AND AGE = #{criteria.age}
             </if>
-            <if test="criteria.birthday != null and criteria.birthday != ''">
-                AND birthday LIKE '%' || #{criteria.birthday} || '%'
+            <if test="criteria.birth != null and criteria.birth != ''">
+                AND BIRTH LIKE '%' || #{criteria.birth} || '%'
             </if>
             <if test="criteria.address != null and criteria.address != ''">
-                AND address LIKE '%' || #{criteria.address} || '%'
+                AND ADDRESS LIKE '%' || #{criteria.address} || '%'
             </if>
-            <if test="criteria.phone != null and criteria.phone != ''">
-                AND phone LIKE '%' || #{criteria.phone} || '%'
+            <if test="criteria.phoneNumber != null and criteria.phoneNumber != ''">
+                AND PHONENUMBER LIKE '%' || #{criteria.phoneNumber} || '%'
             </if>
         </where>
     </sql>
@@ -44,16 +44,33 @@
     <select id="search" resultMap="employeeResultMap">
         SELECT
         <include refid="employeeColumns"/>
-        FROM employee
+        FROM EMPLOYEE
         <include refid="searchWhere"/>
-        ORDER BY employee_id
+        ORDER BY EMPLOYEEID
         OFFSET #{offset} ROWS FETCH NEXT #{limit} ROWS ONLY
     </select>
 
     <select id="count" resultType="int">
         SELECT COUNT(*)
-        FROM employee
+        FROM EMPLOYEE
         <include refid="searchWhere"/>
     </select>
+
+    <select id="findById" resultMap="employeeResultMap">
+        SELECT
+        <include refid="employeeColumns"/>
+        FROM EMPLOYEE
+        WHERE EMPLOYEEID = #{employeeId}
+    </select>
+
+    <update id="update">
+        UPDATE EMPLOYEE
+        SET NAME = #{name},
+            AGE = #{age},
+            BIRTH = #{birth},
+            ADDRESS = #{address},
+            PHONENUMBER = #{phoneNumber}
+        WHERE EMPLOYEEID = #{employeeId}
+    </update>
 
 </mapper>
