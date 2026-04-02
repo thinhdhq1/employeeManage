@@ -2,6 +2,7 @@ package com.example.terasoluna.app.config.app;
 
 import javax.sql.DataSource;
 import org.apache.ibatis.session.SqlSessionFactory;
+import com.example.terasoluna.app.domain.repository.EmployeeMapper;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Value;
@@ -18,7 +19,7 @@ import org.springframework.transaction.PlatformTransactionManager;
  * Bean definitions for infrastructure layer.
  */
 @Configuration
-@MapperScan("com.example.terasoluna.app.domain.repository")
+@MapperScan(basePackageClasses = EmployeeMapper.class)
 public class TerasolunaAppInfraConfig {
 
     @Bean

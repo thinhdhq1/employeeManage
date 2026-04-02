@@ -4,4 +4,3 @@ INDEX VERSION 1.4+C:\project\terasoluna\.metadata\.plugins\org.eclipse.wst.jsdt.
 4264903093.index
 746125301.index
 638588416.index
-4041251278.index

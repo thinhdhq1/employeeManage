@@ -3,6 +3,7 @@ package com.example.terasoluna.app.domain.service;
 import com.example.terasoluna.app.domain.model.Employee;
 import com.example.terasoluna.app.domain.repository.EmployeeRepository;
 import java.util.List;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -10,7 +11,8 @@ public class EmployeeSearchServiceImpl implements EmployeeSearchService {
 
     private final EmployeeRepository employeeRepository;
 
-    public EmployeeSearchServiceImpl(EmployeeRepository employeeRepository) {
+    public EmployeeSearchServiceImpl(
+            @Qualifier("myBatisEmployeeRepository") EmployeeRepository employeeRepository) {
         this.employeeRepository = employeeRepository;
     }
 

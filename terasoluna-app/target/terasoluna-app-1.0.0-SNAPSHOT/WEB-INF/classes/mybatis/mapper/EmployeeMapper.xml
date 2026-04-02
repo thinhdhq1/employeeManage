@@ -21,22 +21,22 @@
         <where>
             1 = 1
             <if test="criteria.employeeId != null and criteria.employeeId != ''">
-                AND employee_id LIKE CONCAT('%', #{criteria.employeeId}, '%')
+                AND employee_id LIKE '%' || #{criteria.employeeId} || '%'
             </if>
             <if test="criteria.name != null and criteria.name != ''">
-                AND name LIKE CONCAT('%', #{criteria.name}, '%')
+                AND name LIKE '%' || #{criteria.name} || '%'
             </if>
             <if test="criteria.age != null">
                 AND age = #{criteria.age}
             </if>
             <if test="criteria.birthday != null and criteria.birthday != ''">
-                AND birthday LIKE CONCAT('%', #{criteria.birthday}, '%')
+                AND birthday LIKE '%' || #{criteria.birthday} || '%'
             </if>
             <if test="criteria.address != null and criteria.address != ''">
-                AND address LIKE CONCAT('%', #{criteria.address}, '%')
+                AND address LIKE '%' || #{criteria.address} || '%'
             </if>
             <if test="criteria.phone != null and criteria.phone != ''">
-                AND phone LIKE CONCAT('%', #{criteria.phone}, '%')
+                AND phone LIKE '%' || #{criteria.phone} || '%'
             </if>
         </where>
     </sql>
@@ -47,7 +47,7 @@
         FROM employee
         <include refid="searchWhere"/>
         ORDER BY employee_id
-        LIMIT #{limit} OFFSET #{offset}
+        OFFSET #{offset} ROWS FETCH NEXT #{limit} ROWS ONLY
     </select>
 
     <select id="count" resultType="int">

@@ -27,6 +27,11 @@ public class EmployeeSearchController {
         return new EmployeeSearchForm();
     }
 
+    @GetMapping("/")
+    public String home() {
+        return "redirect:/employee/search";
+    }
+
     @GetMapping("/employee/search")
     public String search(
             @Valid @ModelAttribute("employeeSearchForm") EmployeeSearchForm form,
